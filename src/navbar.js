@@ -11,27 +11,33 @@ function NavBar() {
       <Container>
         <Nav
           className="justify-content-start"
-          activeKey={active}
+          activeKey="/"
           onSelect={(selectedKey) => setActive(selectedKey)}
         >
-          <Navbar.Brand href="/">Board Game Library</Navbar.Brand>
-          <Nav.Link to="/addGame"
-            eventKey="AddGame"
-            data-toggle="tooltip"
-            data-placement="bottom"
-            title="Add Games Here"
-          >
-            Add Game
-          </Nav.Link>
-          <Nav.Link
-            to="/gameLibrary"
-            eventKey="GetGameLibrary"
-            data-toggle="tooltip"
-            data-placement="bottom"
-            title="Check Out All Your Games"
-          >
-            Game Library
-          </Nav.Link>
+          <Nav.Item>
+            <Navbar.Brand href="/">Board Game Library</Navbar.Brand>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link href="/addGame"
+              eventKey="AddGame"
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title="Add Games Here"
+            >
+              Add Game
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link
+              href="/gameLibrary"
+              eventKey="GetGameLibrary"
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title="Check Out All Your Games"
+            >
+              Game Library
+            </Nav.Link>
+          </Nav.Item>
         </Nav>
         <Nav>
           <Navbar.Text className="justify-content-end">
