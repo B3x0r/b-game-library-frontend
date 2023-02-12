@@ -28,9 +28,6 @@
     "yup": "^0.32.11"
   },
   "scripts": {
-    "start": "NODE_ENV=production react-scripts start",
-    "my-custom-start": "cd api && npm start",
-    "heroku-postbuild": "npm run build && (cd api && npm install)",
     "dev": "nodemon http_server.js",
     "build": "react-scripts build",
     "test": "echo \"Error: no test specified\" && exit 1",

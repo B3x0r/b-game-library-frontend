@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -18,25 +19,25 @@ function NavBar() {
             <Navbar.Brand href="/">Board Game Library</Navbar.Brand>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link href="/addGame"
+            <Link to="/addGame"
               eventKey="AddGame"
               data-toggle="tooltip"
               data-placement="bottom"
               title="Add Games Here"
             >
               Add Game
-            </Nav.Link>
+            </Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link
-              href="/gameLibrary"
+            <Link
+              to="/gameLibrary"
               eventKey="GetGameLibrary"
               data-toggle="tooltip"
               data-placement="bottom"
               title="Check Out All Your Games"
             >
               Game Library
-            </Nav.Link>
+            </Link>
           </Nav.Item>
         </Nav>
         <Nav>

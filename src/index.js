@@ -1,9 +1,9 @@
 import "bootstrap/dist/css/bootstrap.css";
 import "./index.css";
 import NavBar from "./navbar";
+import { createRoot } from "react-dom/client";
 import React, { Component, Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import * as ReactDOMClient from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
 import { GameProvider } from "./context";
 
@@ -33,7 +33,7 @@ class App extends Component {
   }
 }
 
-const root = ReactDOMClient.createRoot(document.getElementById("root"));
+const root = createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
