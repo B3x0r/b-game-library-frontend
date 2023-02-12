@@ -15,8 +15,7 @@ function NavBar() {
           onSelect={(selectedKey) => setActive(selectedKey)}
         >
           <Navbar.Brand href="/">Board Game Library</Navbar.Brand>
-          <Nav.Link
-            href="/addGame"
+          <Nav.Link to="/addGame"
             eventKey="AddGame"
             data-toggle="tooltip"
             data-placement="bottom"
@@ -25,7 +24,7 @@ function NavBar() {
             Add Game
           </Nav.Link>
           <Nav.Link
-            href="/gameLibrary"
+            to="/gameLibrary"
             eventKey="GetGameLibrary"
             data-toggle="tooltip"
             data-placement="bottom"
