@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Container, Table } from "react-bootstrap";
+import { Button, Container, Table } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import { GameContext } from "./context";
 
 function GetGameLibrary() {
@@ -47,7 +48,9 @@ function GetGameLibrary() {
                     : game.gameType}
                 </td>
                 <td>
-                  <a href={"/editGame/" + game._id}> Edit or Delete Game </a>
+                <Button Link to={"/editGame/" + game._id} variant="main">
+                  Edit or Delete Game
+                </Button>
                 </td>
               </tr>
             ))}

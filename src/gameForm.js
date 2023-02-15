@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
-import Button from "react-bootstrap/Button";
-import { Card, Col, Container, Form } from "react-bootstrap";
+import { Button, Card, Col, Container, Form } from "react-bootstrap";
 import { GameContext } from "./context";
 import { useParams } from "react-router-dom";
 
@@ -178,7 +177,7 @@ function AddEdit(props) {
                 <option value="Travel">Travel</option>
                 <option value="War Game">War Games</option>
               </Form.Control>
-              <Form.Text className="text-muted">hold shift down to select more than one</Form.Text>
+              <Form.Text className="text-muted">hold ctrl down to select more than one</Form.Text>
               <br />
               {isAddMode ? (
                 <Button variant="main" onClick={handleAddGame}>
