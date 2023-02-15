@@ -1,5 +1,6 @@
 import React from "react";
-import { Button, Card, Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import { Card, Container } from "react-bootstrap";
 
 function Home() {
   return (
@@ -14,9 +15,9 @@ function Home() {
         <Card.Body>
           <Card.Title>Board Game Library</Card.Title>
           <Card.Text>A new way to check out your own games.</Card.Text>
-          <Button href="/gameLibrary" variant="main">
+          <Link to="/gameLibrary" variant="main">
             Pick the Right Game
-          </Button>
+          </Link>
         </Card.Body>
       </Card>
     </Container>

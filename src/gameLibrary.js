@@ -48,9 +48,9 @@ function GetGameLibrary() {
                     : game.gameType}
                 </td>
                 <td>
-                <Button Link to={"/editGame/" + game._id} variant="main">
+                <Link to={"/editGame/" + game._id} variant="main">
                   Edit or Delete Game
-                </Button>
+                </Link>
                 </td>
               </tr>
             ))}
